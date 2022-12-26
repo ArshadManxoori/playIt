@@ -112,8 +112,8 @@ export default function Signup() {
               </Typography>
               {/* {true && <Alert severity="error">This is an error alert — check it out!</Alert>} */}
               {error!='' && <Alert severity="error">{error}</Alert>}
-              <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth={true} margin="dense" size='small' value={email} onChange={(e)=>setEmail(e.target.value)}/>
-              <TextField id="outlined-basic" label="Password" variant="outlined" fullWidth={true} margin="dense" size='small' value={password} onChange={(e)=>setPassword(e.target.value)}/>
+              <TextField id="outlined-basic" label="Email" type={'email'} variant="outlined" fullWidth={true} margin="dense" size='small' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+              <TextField id="outlined-basic" label="Password" type={'password'} variant="outlined" fullWidth={true} margin="dense" size='small' value={password} onChange={(e)=>setPassword(e.target.value)}/>
               <TextField id="outlined-basic" label="Full Name" variant="outlined" fullWidth={true} margin="dense" size='small' value={name} onChange={(e)=>setName(e.target.value)}/>
               <Button size="small" color="secondary" variant ='outlined' fullWidth={true} margin='dense' startIcon={<CloudUploadIcon />} component="label">     {/* component='label' dene se upload button input tag ki trah kaam krne lga */}
                    Upload Profile Image

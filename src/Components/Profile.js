@@ -13,12 +13,12 @@ import Like2 from './Like2';
 import AddComment from './AddComment';
 import Comments from './Comments';
 import './Profile.css';
-
+import { RestaurantRounded } from '@material-ui/icons';
 
 function Profile() {
   const {id} = useParams(); //it is userId
-  const [userData, setUserData] = useState(null);
   const [posts, setPosts] = useState(null);
+  const [userData, setUserData] = useState(null);
 
   //post.js se laye hai
   const [open, setOpen] = useState(null);    
@@ -39,7 +39,7 @@ function Profile() {
   useEffect(async() => {
     if(userData != null){
       let parr = [];
-      for(let i = 0; i < userData.postIds.length; i++){
+      for(let i = 0; i < userData?.postIds?.length; i++){
         let postData = await database.posts.doc(userData.postIds[i]).get();
         parr.push({...postData.data(),postId:postData.id});
       }
@@ -51,7 +51,7 @@ function Profile() {
     <>
       {
         posts==null || userData==null ? <CircularProgress/> :
-        <>
+        <> 
           <Navbar userData={userData}/>
           <div className="spacer"></div>
           <div className="container">
@@ -64,7 +64,7 @@ function Profile() {
                     Email : {userData.email}    
                   </Typography>
                   <Typography variant='h6'>
-                    Posts : {userData.postIds.length}   
+                    Posts : {userData?.postIds?.length}   
                   </Typography>
               </div>      
             </div>

@@ -5,13 +5,14 @@ import 'firebase/compat/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDkWWUgWuwqS5-MoJ9VXKD8cH2iNZo3X5M",
-    authDomain: "reels-c34fc.firebaseapp.com",
-    projectId: "reels-c34fc",
-    storageBucket: "reels-c34fc.appspot.com",
-    messagingSenderId: "55270595310",
-    appId: "1:55270595310:web:1e3154ed464833a7dc31ff"
-  };
+  apiKey: "AIzaSyDeQsRrJ1Noj5Wpe6K5yJGI06-60af9Nog",
+  authDomain: "playit-c67a1.firebaseapp.com",
+  projectId: "playit-c67a1",
+  storageBucket: "playit-c67a1.appspot.com",
+  messagingSenderId: "685419660099",
+  appId: "1:685419660099:web:d23d872cb52d748d1e65f6",
+};
+
 
 // Initialize Firebase (initialize khud likha hai)
 firebase.initializeApp(firebaseConfig);

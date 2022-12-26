@@ -71,7 +71,7 @@ function Posts({userData}) {
                 posts==null || userData==null ? <CircularProgress /> :
                 <div className='video-container'>
                     {
-                        posts.map((post,index)=>(   //NOTE: arrwo function me goll waale bracket use hue hai
+                        posts.map((post,index)=>(   //NOTE: arrwo function me round bracket use hue hai
                             <React.Fragment key={index}>
                                 <div className='videos'>
                                     {/* {console.log(post.pUrl)} */}

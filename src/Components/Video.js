@@ -6,6 +6,11 @@ function Video(props) {
     const handleClick = (e) => {
         e.preventDefault();
         e.target.muted = !e.target.muted;
+        // if(e.target.muted){
+        //     e.target.pause();
+        // }else{
+        //     e.target.play();
+        // }
     }
     const handleScroll = (e) => {
         // ReactDOMNode ek tree hoga pura usme se node find kr rhe hai
